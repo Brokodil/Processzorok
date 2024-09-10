@@ -201,7 +201,7 @@ header {
 
     .full {
         grid-template-columns: 100%;
-        overflow-y: scroll;
+        grid-template-rows: 50%;
     }
 
     .fullkep {
