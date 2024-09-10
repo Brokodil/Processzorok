@@ -70,7 +70,6 @@ header {
 
 .textdiv {
     width: 80%;
-    height: 20%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 15%;
@@ -156,7 +155,10 @@ header {
     grid-template-columns: 50% 50%;
     display: grid;
     padding-top: 10%;
-    overflow-y: auto;
+}
+
+.full::-webkit-scrollbar {
+    display: none;
 }
 
 .fullcim {
@@ -199,7 +201,8 @@ header {
 
     .full {
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 100% 50%;
+        overflow-y: scroll;
     }
 
     .fullkep {
