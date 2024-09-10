@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processorok</title>
+    <link rel="stylesheet" href="processor.css">
+    <script src="processor.js"></script>
+</head>
+
+<body>
+    <header>
+        <p class="cim" onclick="ki()">Processzorok</p>
+        <img alt="menü" src="hotdog.png" id="menugomb" class="navikep" onclick="menube()">
+    </header>
+    <div class="navidiv" id="navidiv">
+        <p class="navitext" onclick="LGA()">LGA </p>
+        <p class="navitext" onclick="PGA()">PGA</p>
+        <p class="navitext" onclick="Intel()">Intel</p>
+        <p class="navitext" onclick="AMD()">AMD</p>
+        <p class="navitext" onclick="Apple()">Apple</p>
+        <p class="navitext" onclick="Qualcomm()">Qualcomm</p>
+        <p class="navitext" onclick="Nvidia()">Nvidia</p>
+    </div>
+    <div class="tartalom">
+        <div class="textdiv">
+            <p class="textcim">Mi az a processzor?</p>
+            <p class="texttartalom">A processzor vagy CPU (Central Processing Unit) a számítógép "agya".
+                Ez az egység felelős az utasítások értelmezéséért és végrehajtásáért. A processzor egy félvezetős
+                kivitelezésű, összetett elektronikus áramkör, amely az adatok ki- és beviteléhez szükséges
+                sínrendszerrel rendelkezik. A világ első mikroprocesszorát az amerikai Texas Instruments fejlesztette ki
+                1971-ben, és azóta a processzorok folyamatosan fejlődnek, több milliárd tranzisztort tartalmazva. A
+                processzorok a számítógépek teljesítményét meghatározzák, és kulcsfontosságúak a mindennapi feladatok
+                elvégzésében.
+            </p>
+        </div>
+        <div>
+            <p class="gridcim">Processzor architectúrák</p>
+            <div class="aggrid">
+                <img class="gridkep" alt="LGA" title="LGA" src="LGA.png" onclick="LGA()">
+                <img class="gridkep" alt="PGA" title="PGA" src="PGA.png" onclick="PGA()">
+            </div>
+        </div>
+        <div>
+            <p class="gridcim">Nagy processzor gyártó cégek</p>
+            <div class="pggrid">
+                <img class="gridkep" alt="intel" title="intel" src="intel.png" onclick="Intel()">
+                <img class="gridkep" alt="amd" title="amd" src="amd.png" onclick="AMD()">
+                <img class="gridkep" alt="apple" title="apple" src="apple.png" onclick="Apple()">
+                <img class="gridkep" alt="qualcomm" title="qualcomm" src="qualcomm.png" onclick="Qualcomm()">
+            </div>
+        </div>
+        <div>
+            <p class="gridcim">Nagy grafikus processzor gyártó cégek</p>
+            <div class="gggrid">
+                <img class="gridkep" alt="intel" title="intel" src="intel.png" onclick="Intel()">
+                <img class="gridkep" alt="amd" title="amd" src="amd.png" onclick="AMD()">
+                <img class="gridkep" alt="apple" title="apple" src="apple.png" onclick="Apple()">
+                <img class="gridkep" alt="Nvidia" title="Nvidia" src="nvidia.png" onclick="Nvidia()">
+            </div>
+        </div>
+        <div class="full" id="Intel">
+            <div>
+                <p class="fullcim">Intel</p>
+                <p class="fulltext">Az Intel processzorok széles választékot kínálnak, amelyek különböző
+                    teljesítményigényeket és felhasználási területeket szolgálnak ki. Az Intel Core sorozat a
+                    legismertebb, amely magában foglalja az i3, i5, i7 és i9 modelleket. Ezek a processzorok különböző
+                    mag- és szálkonfigurációkkal rendelkeznek, és különböző órajeleken működnek, hogy megfeleljenek a
+                    felhasználók igényeinek.
+
+                    Az Intel legújabb, 14. generációs processzorai, mint például a Raptor Lake-S és Raptor Lake-HX,
+                    tovább növelik a teljesítményt és az energiahatékonyságot. Ezek a processzorok magasabb órajelekkel
+                    és nagyobb cache-memóriával rendelkeznek, ami jobb multitasking és játékélményt biztosít.
+
+                    AZ Intel bár annyira nem ismertem de videókártyákat is gyárt amik egyenlőre nem örvendtek nagy
+                    sikernek a a magánszemélyi piacon
+                </p>
+            </div>
+            <div>
+                <img class="fullkep2" alt="intelprocesszor" title="intelprocesszor" src="intelp.png">
+                <img class="fullkep2" alt="intelvideókártya" title="intelvideókártya" src="intelg.png">
+            </div>
+        </div>
+        <div class="full" id="AMD">
+            <div>
+                <p class="fullcim">AMD</p>
+                <p class="fulltext">Az AMD processzorok, különösen a Ryzen sorozat, nagy népszerűségnek örvendenek a
+                    kiváló teljesítményük és ár-érték arányuk miatt. Az AMD Ryzen processzorok különböző modellekben
+                    érhetők el, mint például a Ryzen 3, Ryzen 5, Ryzen 7 és Ryzen 9, amelyek különböző
+                    teljesítményigényeket szolgálnak ki.
+
+                    Az AMD legújabb, 9000-es sorozatú processzorai, mint például a Ryzen 9950X, a világ legfejlettebb és
+                    legerősebb asztali processzorai közé tartoznak1. Ezek a processzorok a legújabb “Zen 5”
+                    magtechnológiát használják, és kiváló teljesítményt nyújtanak játékokhoz és professzionális
+                    feladatokhoz egyaránt.
+
+                    Az AMD Grafikus processorai a RADEON kártyasorozatukban érhető el ami az egyik vezető videókártya
+                    típus a piacon.
+                </p>
+            </div>
+            <div>
+                <img class="fullkep2" alt="amdprocesszor" title="amdprocesszor" src="amdp.png">
+                <img class="fullkep2" alt="amdvideókártya" title="amdvideókártya" src="amdg.png">
+            </div>
+        </div>
+        <div class="full" id="Apple">
+            <div>
+                <p class="fullcim">Apple</p>
+                <p class="fulltext">Az Apple Silicon processzorok az Apple által tervezett és fejlesztett rendszerek egy
+                    chipen (SoC), amelyek az ARM architektúrát használják. Ezek a processzorok az Apple eszközeinek
+                    széles skálájában megtalálhatók, beleértve a Mac-eket, iPhone-okat, iPad-eket, Apple TV-t, Apple
+                    Watch-ot és még sok mást.
+
+                    Az Apple Silicon első generációja, az M1 chip, 2020 novemberében debütált, és azóta több
+                    fejlesztésen ment keresztül, mint például az M1 Pro, M1 Max, M1 Ultra, valamint az újabb M2 és M3
+                    sorozatok23. Ezek a processzorok kiváló teljesítményt és energiahatékonyságot kínálnak, és az Apple
+                    teljes mértékben integrálja őket a saját hardver- és szoftvermegoldásaival.
+
+                    Az Apple silicon egyik meghatározó tulajdonsága a felépítése ami magába foglalja a GPUt a CPUt és a
+                    memóriát is a chip belsejébe.
+                </p>
+            </div>
+            <img class="fullkep" alt="appleprocesszorok" title="appleprocesszorok" src="applep.png">
+        </div>
+        <div class="full" id="Qualcomm">
+            <div>
+                <p class="fullcim">Qualcomm</p>
+                <p class="fulltext">A Qualcomm processzorok, különösen a Snapdragon sorozat, kiemelkedő teljesítményt és
+                    energiahatékonyságot kínálnak, és széles körben használják okostelefonokban, tabletekben és más
+                    mobil eszközökben. A Snapdragon processzorok különböző modellekben érhetők el, mint például a
+                    Snapdragon 8 Gen 2, amely a legújabb csúcskategóriás modell, és kiváló teljesítményt nyújt
+                    játékokhoz, kamerákhoz és mesterséges intelligencia alkalmazásokhoz.
+
+                    A Qualcomm processzorok nemcsak a mobil eszközökben, hanem beágyazott rendszerekben és
+                    adatközpontokban is megtalálhatók. Ezek a processzorok fejlett CPU, GPU, DSP és ISP technológiákat
+                    integrálnak, hogy kiváló felhasználói élményt biztosítsanak.</p>
+            </div>
+            <img class="fullkep" alt="qualcommprocesszor" title="qualcommprocesszor" src="qulacmmp.png">
+        </div>
+        <div class="full" id="Nvidia">
+            <div>
+                <p class="fullcim">Nvidia</p>
+                <p class="fulltext">Az NVIDIA egy amerikai technológiai vállalat, amelyet 1993-ban alapítottak.
+                    Elsősorban grafikus feldolgozó egységeiről (GPU) ismert, amelyek a játékok, professzionális
+                    vizualizációk és mesterséges intelligencia alkalmazások terén nyújtanak kiemelkedő teljesítményt. Az
+                    NVIDIA GeForce sorozatú videókártyái a játékosok körében népszerűek, míg a Quadro és Tesla sorozatok
+                    a professzionális és tudományos felhasználók számára készültek. Az NVIDIA emellett az AI és a
+                    mélytanulás területén is vezető szerepet tölt be, különösen az autonóm járművek és a robotika
+                    fejlesztésében. Az NVIDIA folyamatosan innovál, hogy megfeleljen a technológiai kihívásoknak és
+                    igényeknek.</p>
+            </div>
+            <div>
+                <img class="fullkep2" alt="Nvidiaprocesszor" title="Nvidiaprocesszor" src="nvidiap.png">
+                <img class="fullkep2" alt="Nvidiavideókártya" title="Nvidiavideókártya" src="nvidiag.png">
+            </div>
+        </div>
+        <div class="full" id="LGA">
+            <div>
+                <p class="fullcim">LGA</p>
+                <p class="fulltext">Az LGA processzorok legfeltűnőbb tulajdonsága, hogy a processzor lába nem magán az
+                    egységen hanem a hozzá tartozó foglalaton találhatóak.
+                    Ezáltal a processor lába nincsenek akkora veszálynek kitéve mint egy PGA processzornál.
+                </p>
+            </div>
+            <img class="fullkep" alt="LGA" title="LGA" src="LGA.png">
+        </div>
+        <div class="full" id="PGA">
+            <div>
+                <p class="fullcim">PGA</p>
+                <p class="fulltext">A PGA típusú processzor abban különbözik társától, hogy a processzor lábai magán a
+                    processzoron találhatóak és nem a foglalatban.</p>
+            </div>
+            <img class="fullkep" alt="PGA" title="PGA" src="PGA.png">
+        </div>
+    </div>
+</body>
+
+</html>

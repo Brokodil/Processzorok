@@ -1,0 +1,258 @@
+body {
+    margin: none;
+    color: limegreen;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 2;
+    background-color: #04361B;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.navidiv {
+    z-index: 1;
+    position: fixed;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: #04361B;
+    transition: 1s;
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    text-align: center;
+}
+
+.navitext {
+    color: limegreen;
+}
+
+.navitext:hover {
+    color: #A5D9C5;
+}
+
+.navikep {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 5%;
+    min-width: 70px;
+    z-index: 3;
+}
+
+.tartalom {
+    width: 100%;
+    height: 100%;
+    margin: none;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    overflow: scroll;
+    background-image: url("matrix.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.tartalom::-webkit-scrollbar {
+    display: none
+}
+
+.cim {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 200%;
+}
+
+.textdiv {
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    background-color: #04361B;
+    border-radius: 20px;
+
+}
+
+.textcim {
+    text-align: center;
+    font-size: 150%;
+}
+
+.texttartalom {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+}
+
+.gridcim {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 200%;
+    width: 50%;
+    height: 10%;
+    background-color: #04361B;
+    border-radius: 50px;
+}
+
+.pggrid {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gggrid {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.aggrid {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    margin-left: 25%;
+    margin-right: 25%;
+    grid-template-columns: 25% 25%;
+
+}
+
+.gridkep {
+    width: 80%;
+    margin-left: 1%;
+    margin-bottom: 10%;
+    background-color: #04361B;
+    border-radius: 10%;
+    border: 10px;
+    border-color: #28a032;
+    border-style: outset;
+    transition: 1s;
+}
+
+.gridkep:hover {
+    border-style: inset;
+    border-color: limegreen;
+    transition: 1s;
+    width: 90%;
+}
+
+.full {
+    width: 100%;
+    height: 86%;
+    position: fixed;
+    top: -1000%;
+    left: 0%;
+    background-color: #04361B;
+    transition: 1s;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    padding-top: 10%;
+    overflow-y: auto;
+}
+
+.fullcim {
+    text-align: center;
+    font-size: 200%;
+}
+
+.fulltext {
+    font-size: 110%;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fullkep {
+    width: 80%;
+    margin-right: 10%;
+}
+
+.fullkep2 {
+    width: 50%;
+    float: left;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .pggrid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .gggrid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .aggrid {
+        grid-template-columns: 50% 50%;
+        margin-left: 0%;
+    }
+
+    .full {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .fullkep {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .textdiv {
+        margin-top: 25%;
+    }
+
+    .fullkep2 {
+        float: none;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .gridcim {
+        font-size: 150%;
+        border-radius: 25px;
+    }
+
+    .pggrid {
+        grid-template-columns: 100%;
+    }
+
+    .gggrid {
+        grid-template-columns: 100%;
+    }
+
+    .aggrid {
+        grid-template-columns: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .navidiv {
+        grid-template-columns: 100%;
+        height: 85%;
+        background-color: #04361B;
+    }
+
+    .gridkep {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        border: none;
+    }
+
+    .textdiv {
+        margin-top: 25%;
+    }
+}
