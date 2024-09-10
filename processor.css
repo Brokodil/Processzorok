@@ -201,7 +201,6 @@ header {
 
     .full {
         grid-template-columns: 100%;
-        grid-template-rows: 50%;
     }
 
     .fullkep {
