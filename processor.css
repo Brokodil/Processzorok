@@ -2,6 +2,7 @@ body {
     margin: none;
     color: limegreen;
     overflow-x: hidden;
+    background-color: #04361B;
 }
 
 header {
@@ -12,6 +13,9 @@ header {
     position: fixed;
     top: 0%;
     left: 0%;
+    border-bottom: #06ad00;
+    border-width: 3px;
+    border-bottom-style: solid;
 }
 
 .navidiv {
@@ -75,6 +79,9 @@ header {
     margin-top: 15%;
     background-color: #04361B;
     border-radius: 20px;
+    border-color: #06ad00;
+    border-style: solid;
+    border-width: 3px;
 
 }
 
@@ -99,6 +106,9 @@ header {
     height: 10%;
     background-color: #04361B;
     border-radius: 50px;
+    border-color: #06ad00;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .pggrid {
@@ -154,7 +164,6 @@ header {
     transition: 1s;
     grid-template-columns: 50% 50%;
     display: grid;
-    padding-top: 10%;
 }
 
 .full::-webkit-scrollbar {
@@ -176,11 +185,6 @@ header {
 .fullkep {
     width: 80%;
     margin-right: 10%;
-}
-
-.fullkep2 {
-    width: 50%;
-    float: left;
 }
 
 
@@ -205,19 +209,15 @@ header {
     }
 
     .fullkep {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .textdiv {
         margin-top: 25%;
     }
 
-    .fullkep2 {
-        float: none;
-        margin-left: 25%;
-    }
 }
 
 @media screen and (max-width:600px) {
