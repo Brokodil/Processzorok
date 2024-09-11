@@ -17,9 +17,10 @@ function ki() {
   LGAki()
   PGAki()
   menuki()
+  document.getElementById("cim").innerHTML = "Processzorok"
 }
 
-function Intel() {
+async function Intel() {
   menuki()
   AMDki()
   Appleki()
@@ -28,13 +29,15 @@ function Intel() {
   LGAki()
   PGAki()
   document.getElementById("Intel").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function Intelki() {
   document.getElementById("Intel").style.top = "-1000%";
 };
 
-function AMD() {
+async function AMD() {
   menuki()
   Intelki()
   Appleki()
@@ -43,13 +46,15 @@ function AMD() {
   LGAki()
   PGAki()
   document.getElementById("AMD").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function AMDki() {
   document.getElementById("AMD").style.top = "-1000%";
 };
 
-function Apple() {
+async function Apple() {
   menuki()
   Intelki()
   AMDki()
@@ -58,13 +63,15 @@ function Apple() {
   LGAki()
   PGAki()
   document.getElementById("Apple").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function Appleki() {
   document.getElementById("Apple").style.top = "-1000%";
 };
 
-function Qualcomm() {
+async function Qualcomm() {
   menuki()
   Intelki()
   AMDki()
@@ -73,13 +80,15 @@ function Qualcomm() {
   LGAki()
   PGAki()
   document.getElementById("Qualcomm").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function Qualcommki() {
   document.getElementById("Qualcomm").style.top = "-1000%";
 };
 
-function Nvidia() {
+async function Nvidia() {
   menuki()
   Intelki()
   AMDki()
@@ -88,13 +97,15 @@ function Nvidia() {
   LGAki()
   PGAki()
   document.getElementById("Nvidia").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function Nvidiaki() {
   document.getElementById("Nvidia").style.top = "-1000%";
 };
 
-function LGA() {
+async function LGA() {
   menuki()
   Intelki()
   AMDki()
@@ -103,13 +114,15 @@ function LGA() {
   Nvidiaki()
   PGAki()
   document.getElementById("LGA").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function LGAki() {
   document.getElementById("LGA").style.top = "-1000%";
 };
 
-function PGA() {
+async function PGA() {
   menuki()
   Intelki()
   AMDki()
@@ -118,6 +131,8 @@ function PGA() {
   Nvidiaki()
   LGAki()
   document.getElementById("PGA").style.top = "14%";
+  await new Promise((r) => setTimeout(r, 850));
+  document.getElementById("cim").innerHTML = "Processzorok" + "<br>" + "EXIT";
 };
 
 function PGAki() {
