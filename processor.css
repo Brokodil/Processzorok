@@ -276,6 +276,8 @@ footer {
         border-color: limegreen;
         transition: 1s;
         width: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     .textdiv {
